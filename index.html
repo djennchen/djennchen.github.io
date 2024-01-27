@@ -23,9 +23,10 @@
 	</script>
 	<body class="index is-preload">
 		<div id="page-wrapper">
+			<div id="main-header"></div>
 
 			<!-- Header -->
-				<header id="header" class="alt">
+<!-- 				<header id="header">
 					<h1 id="logo"><a href="index.html">Travel by Spreadsheets</a></h1>
 					<nav id="nav">
 						<ul>
@@ -40,7 +41,7 @@
 							</li>
 						</ul>
 					</nav>
-				</header>
+				</header> -->
 
 			<!-- Banner -->
 				<section id="banner">
@@ -87,31 +88,31 @@
 						<section class="wrapper style3 container special">
 
 							<header class="major">
-								<h2>Recent Trips</h2>
+								<h2>Recent(ish) Trips</h2>
 							</header>
 
 							<div class="row">
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="trips/italy" class="image featured"><img src="images/travel/italy/venice.jpeg" alt="" /></a>
+										<a href="trips/glacier" class="image featured"><img src="images/travel/glacier/grinell.jpeg" alt="" /></a>
 										<header>
-											<h3>Italy</h3>
-											<h5> Oct 2022 </h5>
+											<h3>Glacier</h3>
+											<h5> Sept 2022 // 1 week</h5>
 										</header>
-										<p>Mountains, art, and wine -- what more could you want?</p>
+										<p>Hiking!</p>
 									</section>
 
 								</div>
 								<div class="col-6 col-12-narrower">
 
 									<section>
-										<a href="trips/glacier" class="image featured"><img src="images/travel/glacier/grinell.jpeg" alt="" /></a>
+										<a href="trips/italy" class="image featured"><img src="images/travel/italy/venice.jpeg" alt="" /></a>
 										<header>
-											<h3>Glacier</h3>
-											<h5> Sept 2022 </h5>
+											<h3>Italy</h3>
+											<h5> Oct 2022 // 2 weeks</h5>
 										</header>
-										<p>Hiking!</p>
+										<p>History, art, and mountains all in one</p>
 									</section>
 
 								</div>
@@ -187,6 +188,10 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script> 
+				$(document).ready(function(){
+					$("#main-header").load("header.html"); 
+				});
+    		</script> 
 	</body>
 </html>
