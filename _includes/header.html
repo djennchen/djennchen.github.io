@@ -1,0 +1,17 @@
+<header id="header">
+	<h1 id="logo"><a href="{{ '/' | relative_url }}">Travel by Spreadsheets</a></h1>
+	<nav id="nav">
+		<ul>
+			<li class="{% if page.url == '/' %}current{% endif %}"><a href="{{ '/' | relative_url }}">Welcome</a></li>
+			<li class="{% if page.url == '/contact/' %}current{% endif %}"><a href="{{ '/contact/' | relative_url }}">About Me</a></li>
+			<li class="submenu">
+				<a href="#">Trips</a>
+				<ul>
+					{% for trip in site.trips %}
+					<li><a href="{{ trip.url | relative_url }}">{{ trip.trip_name }}</a></li>
+					{% endfor %}
+				</ul>
+			</li>
+		</ul>
+	</nav>
+</header>
